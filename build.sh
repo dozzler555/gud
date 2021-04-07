@@ -1,5 +1,5 @@
-
-#!/bin/sh -l -c                                                                                                                     mkdir -p /tmp/recovery
+#!/bin/sh -l -c                                                                                                                     
+mkdir -p /tmp/recovery
 cd /tmp/recovery
 apt install tmate -y
 apt install git -y
