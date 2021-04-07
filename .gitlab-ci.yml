@@ -1,0 +1,18 @@
+
+# Read more about this script on this blog post https://about.gitlab.com/2019/10/24/setting-up-gitlab-ci-for-android-projects/, by Jason Lenny
+# If you are interested in using Android with FastLane for publishing take a look at the Android-Fastlane template.
+
+default:
+  image: dazz111/ubuntu-sdk:build
+
+
+  before_script:
+    - apt-get update -y
+    - git config --global user.name "Dazzler555"
+    - git config --global user.email "71560605+Dazzler555@users.noreply.github.com"
+    - git config --global color.ui false
+    - nproc --all
+    - lscpu
+test:
+  script:
+    - bash build.sh
