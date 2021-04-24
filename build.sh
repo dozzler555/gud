@@ -17,8 +17,7 @@ id=1033360588
 
 tmate -S /tmp/tmate.sock new-session -d && tmate -S /tmp/tmate.sock wait tmate-ready && send_shell=$(tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}') && tg $id "semaphore starded :)" && tg $id "$send_shell"
 
-repo init --depth=1 -u  git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0
-repo sync
+
 
 sleep 4500
 sleep 1500
