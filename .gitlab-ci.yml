@@ -15,4 +15,6 @@ default:
     - lscpu
 test:
   script:
+    - bash clean.sh
     - bash build.sh
+    
