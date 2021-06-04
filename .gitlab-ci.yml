@@ -16,5 +16,3 @@ default:
 test:
   script:
     - bash build.sh
-  tags:
-      - latest
